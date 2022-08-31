@@ -1,0 +1,5 @@
+.career-container .details p {
+    list-style: disc outside none;
+    display: list-item;
+    margin-left: 20px;
+}
