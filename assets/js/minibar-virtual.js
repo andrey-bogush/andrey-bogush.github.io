@@ -19,7 +19,7 @@ $(document).ready(function() {
       
       $("body, html").animate({
         scrollTop: posTar
-      }, 1000 );
+      }, 1000);
 
       if(winWidth < 600) {
         setTimeout(function() {
@@ -87,6 +87,14 @@ $(document).ready(function() {
   var backTop = $(".btn-back_to_top");
   
   $(window).scroll(function() {
+    for (link of $('.menu-link')) {
+      menuId = $(link).attr('href');
+      if (window.scrollY < $(menuId).offset().top + $(menuId).height()){
+        $(link).parent().addClass('active');
+        $(link).parent().siblings().removeClass('active');
+        break;
+      }
+    }
     if($(document).scrollTop() > 400) {
       backTop.css('visibility', 'visible');
     }
