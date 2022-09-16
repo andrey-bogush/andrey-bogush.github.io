@@ -1,6 +1,6 @@
 function initMap() {
-    // Latitude and Longitude
-    var myLatLng = {lat: 37.777460, lng: -122.439846};
+    // Latitude and Longitude, 
+    var myLatLng = {lat: 49.99505853400596, lng: 36.2737361205039};
     
     var map = new google.maps.Map(document.getElementById('google-maps'), {
         zoom: 17,
@@ -10,6 +10,6 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        title: 'San Francisco, United States' // Title Location
+        title: 'Kharkiv, Ukraine' // Title Location
     });
 }
