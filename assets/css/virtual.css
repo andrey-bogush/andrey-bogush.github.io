@@ -1049,6 +1049,9 @@ a:hover, a:active {
 .gridder {
     position: relative;
     display: block;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .grid-item {

@@ -1,14 +1,14 @@
 $(function() {
-  var $grid = $('.gridder').isotope({
-    itemSelector: '.grid-item',
-    percentPosition: true
-  });
+  // var $grid = $('.gridder').isotope({
+  //   itemSelector: '.grid-item',
+  //   percentPosition: true
+  // });
   
   // filter items on button click
-  $('.filterable-button').on( 'click', 'button', function() {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-  });
+  // $('.filterable-button').on( 'click', 'button', function() {
+  //   var filterValue = $(this).attr('data-filter');
+  //   $grid.isotope({ filter: filterValue });
+  // });
   
   $('.testi-carousel').owlCarousel({
     margin: 0,
