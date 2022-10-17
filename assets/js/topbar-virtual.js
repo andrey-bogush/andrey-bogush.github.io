@@ -10,10 +10,12 @@ $(function() {
   //   $grid.isotope({ filter: filterValue });
   // });
   
-  var $grid = $('.gridder').isotope({
-    itemSelector: '.grid-item',
-    percentPosition: true
-  });
+  var $grid = $('.gridder').imagesLoaded(() => {
+    $grid.isotope({
+      itemSelector: '.grid-item',
+      percentPosition: true
+    });
+  })
   $('.filterable-button').on( 'click', 'button', function() {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
